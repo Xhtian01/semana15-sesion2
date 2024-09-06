@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Task APP</h1>
+
+      <main class="main">
+        <form class="form" id="formTask">
+          <div style="padding-bottom: 1rem">
+            <label for="nameTask">Ingrese tarea</label>
+            <input id="nameTask" name="nameTask" type="text" placeholder="Nombre Tarea" />
+          </div>
+
+          <div style="padding-bottom: 1rem">
+            <label for="nameAuthor">Ingrese author</label>
+            <input id="nameAuthor" name="nameAuthor" type="text" placeholder="Nombre Author" />
+          </div>
+
+          <div style="padding-bottom: 1rem">
+            <label for="nameDate">Ingrese fecha</label>
+            <input id="nameDate" name="nameDate" type="date" placeholder="fecha" />
+          </div>
+
+          <div>
+            <button type="submit">Agregar Tarea</button>
+          </div>
+        </form>
+      </main>
+
+      <section id="taskSection">
+        <h2>Listado de Tareas</h2>
+        <section id="taskList"></section>
+      </section>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
